@@ -32,6 +32,7 @@ body::after {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .input label {
@@ -112,4 +113,10 @@ button  {
 button:hover  {
     background-color: #f1f1f1;
     color: #6236ff;
+}
+
+audio  {
+    margin-top: 15px;
+    margin-bottom: 5px;
+   
 }

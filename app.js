@@ -18,7 +18,7 @@ const growCircle = () =>  {
     circleProgress.classList.add("circle-grow");
     setTimeout (() =>  {
         circleProgress.classList.remove("circle-grow");
-    }, 8000);
+    }, 4000);
 };
 
 // Breathing Instructions
@@ -30,8 +30,8 @@ const breathTextUpdate = () => {
       instructions.innerText = "Hold Breath";
       setTimeout(() => {
         instructions.innerText = "Exhale Breath Slowly";
-      }, 4000);
-    }, 4000);
+      }, 8000);
+    }, 8000);
   };
   
   // Breathing App Function
@@ -47,7 +47,7 @@ const breathTextUpdate = () => {
       }
       growCircle();
       breathTextUpdate();
-    }, 12000);
+    }, 10000);
   };
   
 
@@ -64,3 +64,21 @@ start.addEventListener("click", () => {
       }, 2000);
     }, 2000);
   });
+
+
+  // Audio
+var myMusic= document.getElementById("music");
+
+function play() {
+
+myMusic.play();
+
+}
+
+ 
+
+function pause() {
+
+myMusic.pause();
+
+}
